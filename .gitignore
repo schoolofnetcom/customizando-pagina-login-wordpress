@@ -79,3 +79,4 @@ wp-content/plugins/akismet/
 wp-content/themes/twentyseventeen/*
 !wp-content/themes/twentyseventeen/functions.php
 !wp-content/themes/twentyseventeen/page-administracao.php
+!wp-content/themes/twentyseventeen/custom-login/
