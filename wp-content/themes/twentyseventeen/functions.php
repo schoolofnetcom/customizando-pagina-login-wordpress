@@ -691,7 +691,7 @@ function redirect_login_page() {
 		exit;
 	}
 }
-add_action('init','redirect_login_page');
+// add_action('init','redirect_login_page');
 
 /* PARA ONDE IR SER O LOGIN FALHAR */
 function custom_login_failed() {
@@ -699,7 +699,7 @@ function custom_login_failed() {
 	wp_redirect($login_page . '?login=failed');
 	exit;
 }
-add_action('wp_login_failed', 'custom_login_failed');
+// add_action('wp_login_failed', 'custom_login_failed');
 
 /* PARA ONDE IR SE ALGUM CAMPO ESTIVER EM BRANCO */
 function verify_user_pass($user, $username, $password) {
@@ -709,7 +709,7 @@ function verify_user_pass($user, $username, $password) {
 		exit;
 	}
 }
-add_filter('authenticate', 'verify_user_pass', 1, 3);
+// add_filter('authenticate', 'verify_user_pass', 1, 3);
 
 /* PARA ONDE VAI QUANDO DESLOGAR */
 function logout_redirect() {
@@ -717,4 +717,4 @@ function logout_redirect() {
 	wp_redirect($login_page . "?login=false");
 	exit;
 }
-add_action('wp_logout','logout_redirect');
+// add_action('wp_logout','logout_redirect');
